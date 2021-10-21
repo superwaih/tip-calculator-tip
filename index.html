@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+
+    <div class="calc">
+      <div class="calculate">
+        <div class="calc-head">
+          <h5>Bill</h5>
+          <input placeholder='$' type="text" name="" id="tipAmount">
+        </div>
+
+        <div class="selectTip">
+          <p> Select Tip %</p>
+          <div class="btn-up">
+            <button class="btn" id="five"> 5%</button>
+            <button class="btn" id="ten"> 10%</button>
+            <button class="btn" id="fifteen" class="fifteen"> 15%</button>
+
+          </div>
+
+          <div class="btn-down">
+            <button class="btn" id="twentyFive"> 25%</button>
+            <button class="btn" id="fifty"> 50%</button>
+            <button class="btn" id="custom" class="custom"> Custom</button>
+            
+          </div>
+        </div>
+
+        <div class="noPeople">
+          <label for="people">Number of People</label>
+          <input placeholder='$'  required  type="text" name="people" id="people"  >
+        </div>
+
+      </div>
+
+
+      <div class="results">
+        <div class="tip-amount">
+          <div>
+            <h6>
+              Tip Amount
+            </h6>
+            <span>
+              / person
+            </span>
+          </div>
+          <div class="tipPerson">
+            <h4>$0.00 </h4>
+          </div>
+        </div>
+
+
+        <div class="Total">
+          <div>
+            <h6>
+              Total
+            </h6>
+            <span>
+              / person
+            </span>
+          </div>
+          <div class="tipPeople">
+            <h4>$0.00 </h4>
+          </div>
+        </div>
+
+
+        <div class="reset-btn">
+          <button id="reset">Reset</button>
+        </div>
+
+
+
+      
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    <a href="#">shittu adewale</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
